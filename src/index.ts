@@ -26,7 +26,7 @@ const server = new ApolloServer({
 await server.start();
 
 app.get("/",(_,res)=>{
-  res.status(200).send("<h1>Welcome To Graphql Practice App</h1>")
+  res.status(200).send("<h1>Welcome To Graphql Practice Backend App</h1>")
 })
 
 app.use(
