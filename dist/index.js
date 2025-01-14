@@ -19,7 +19,7 @@ const server = new ApolloServer({
 });
 await server.start();
 app.get("/", (_, res) => {
-    res.status(200).send("<h1>Welcome</h1>");
+    res.status(200).send("<h1>Welcome To Graphql Practice App</h1>");
 });
 app.use("/graphql", cors(), express.json(), expressMiddleware(server));
 const startServer = async () => {
